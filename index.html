@@ -17,9 +17,53 @@
             <div class="code">
                 <p><strong>BANNED</strong></p>
                 <p>1 Marshmallow Bee, 1 Stinger, 1 Cloud Vial, 1 Glue</p>
-                <button>Copiar</button>
+                <button onclick="copyCode('BANNED')">Copiar</button>
             </div>
-            <!-- Repite para otros códigos activos -->
+            <div class="code">
+                <p><strong>FrozenBugReboot</strong></p>
+                <p>1 Micro-Converter, 1 Field Dice</p>
+                <button onclick="copyCode('FrozenBugReboot')">Copiar</button>
+            </div>
+            <div class="code">
+                <p><strong>Cubly</strong></p>
+                <p>1 Bumble Bee Jelly, 1 Micro-Converter</p>
+                <button onclick="copyCode('Cubly')">Copiar</button>
+            </div>
+            <div class="code">
+                <p><strong>Frogs</strong></p>
+                <p>1 Stinger, 3 Coconut Drink, 3 Jelly Beans</p>
+                <button onclick="copyCode('Frogs')">Copiar</button>
+            </div>
+            <div class="code">
+                <p><strong>500mil</strong></p>
+                <p>5 Tickets, 5 Field Dice, 5 Gumdrops</p>
+                <button onclick="copyCode('500mil')">Copiar</button>
+            </div>
+            <div class="code">
+                <p><strong>CarmenSanDiego</strong></p>
+                <p>1 Red Extract, 1 Blue Extract, 1 Micro-Converter</p>
+                <button onclick="copyCode('CarmenSanDiego')">Copiar</button>
+            </div>
+            <div class="code">
+                <p><strong>500mMembers</strong></p>
+                <p>10 Field Dice, 10 Gumdrops</p>
+                <button onclick="copyCode('500mMembers')">Copiar</button>
+            </div>
+            <div class="code">
+                <p><strong>Bananas</strong></p>
+                <p>1 Ticket, 1 Micro-Converter</p>
+                <button onclick="copyCode('Bananas')">Copiar</button>
+            </div>
+            <div class="code">
+                <p><strong>FrogBoots</strong></p>
+                <p>1 Marshmallow Bee, 1 Field Dice, 1 Stinger</p>
+                <button onclick="copyCode('FrogBoots')">Copiar</button>
+            </div>
+            <div class="code">
+                <p><strong>Winter</strong></p>
+                <p>1 Ticket, 1 Field Dice, 1 Snowflake</p>
+                <button onclick="copyCode('Winter')">Copiar</button>
+            </div>
         </section>
         <section id="expired-codes">
             <h2>Códigos Expirados</h2>
@@ -27,8 +71,30 @@
                 <p><strong>5MFAVORITES</strong></p>
                 <p>Recompensas variadas</p>
             </div>
-            <!-- Repite para otros códigos expirados -->
+            <div class="code">
+                <p><strong>BeesBuzz123</strong></p>
+                <p>Recompensas variadas</p>
+            </div>
+            <div class="code">
+                <p><strong>2Billion</strong></p>
+                <p>Recompensas variadas</p>
+            </div>
+            <div class="code">
+                <p><strong>BigBag</strong></p>
+                <p>Recompensas variadas</p>
+            </div>
+            <div class="code">
+                <p><strong>RedMarket</strong></p>
+                <p>Recompensas variadas</p>
+            </div>
         </section>
     </main>
+    <script>
+        function copyCode(code) {
+            navigator.clipboard.writeText(code).then(() => {
+                alert('Código copiado: ' + code);
+            });
+        }
+    </script>
 </body>
 </html>
